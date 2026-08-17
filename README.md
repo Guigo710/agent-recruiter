@@ -94,7 +94,7 @@ bash
 - Rode o Scout para validar a busca de vagas.
 - Peça para criar o plano-fase3.md (Curator), referenciando @plano.md e @plano-fase2.md, com as instruções de busca de cursos na Alura via Firecrawl, cruzando quiz + vagas encontradas.
 - Rode o Curator para validar a recomendação de cursos.
-## 6. Estrutura de arquivos do projeto
+
 6. Estrutura de arquivos do projeto
 agent-recruiter/
 
