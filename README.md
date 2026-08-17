@@ -136,6 +136,8 @@ agent-recruiter/
 | `plano.md`                       | Plano e fluxo do **Maestro (Agente 1)**.                            |
 | `plano-fase2.md`                 | Plano e fluxo do **Scout (Agente 2)**.                              |
 | `plano-fase3.md`                 | Plano e fluxo do **Curator (Agente 3)**.                            |
-ões).
-- personas/ — definição de cada agente (system prompt / comportamento).
+
+
+- data/ — arquivos de entrada/saída gerados durante a execução dos agentes (quiz, perfil, vagas e recomendações).
+- personas/ — definição de cada agente (system prompt / comportamento). 
 - skills/ — instruções e procedimentos reutilizáveis pelos agentes, incluindo o AGENTS.md e o procedimento de navegação via Firecrawl (com fallback para busca web nativa).
