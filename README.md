@@ -95,21 +95,27 @@ bash
 - Peça para criar o plano-fase3.md (Curator), referenciando @plano.md e @plano-fase2.md, com as instruções de busca de cursos na Alura via Firecrawl, cruzando quiz + vagas encontradas.
 - Rode o Curator para validar a recomendação de cursos.
 ## 6. Estrutura de arquivos do projeto
+6. Estrutura de arquivos do projeto
 agent-recruiter/
+│
 ├── data/
-│   ├── course-recommendations.md   # Saída do Curator: cursos recomendados
-│   ├── job-search-results.md       # Saída do Scout: vagas encontradas
-│   ├── personality-quiz.md         # Quiz de personalidade respondido pelo usuário
+│   ├── course-recommendations.md   # Cursos recomendados pelo Curator
+│   ├── job-search-results.md       # Vagas encontradas pelo Scout
+│   ├── personality-quiz.md         # Respostas do quiz de personalidade
 │   └── user-profile.md             # Perfil consolidado do usuário
+│
 ├── personas/
-│   ├── curator.md                  # Definição da persona do agente Curator
-│   ├── maestro.md                  # Definição da persona do agente Maestro
-│   └── scout.md                    # Definição da persona do agente Scout
+│   ├── maestro.md                  # Persona e comportamento do Maestro
+│   ├── scout.md                    # Persona e comportamento do Scout
+│   └── curator.md                  # Persona e comportamento do Curator
+│
 ├── skills/
-│   └── AGENTS.md                   # Instruções gerais lidas pelos agentes (@AGENTS.md)
-├── plano.md                        # Plano do agente Maestro (agente 1)
-├── plano-fase2.md                  # Plano do agente Scout (agente 2)
-└── plano-fase3.md                  # Plano do agente Curator (agente 3)
-data/ — arquivos de entrada/saída gerados durante a execução dos agentes (quiz, perfil, vagas e recomendações).
-personas/ — definição de cada agente (system prompt / comportamento).
-skills/ — instruções e procedimentos reutilizáveis pelos agentes, incluindo o AGENTS.md e o procedimento de navegação via Firecrawl (com fallback para busca web nativa).
+│   └── AGENTS.md                   # Instruções gerais compartilhadas pelos agentes
+│
+├── plano.md                        # Plano e fluxo do Maestro (Agente 1)
+├── plano-fase2.md                  # Plano e fluxo do Scout (Agente 2)
+└── plano-fase3.md                  # Plano e fluxo do Curator (Agente 3)
+
+- data/ — arquivos de entrada/saída gerados durante a execução dos agentes (quiz, perfil, vagas e recomendações).
+- personas/ — definição de cada agente (system prompt / comportamento).
+- skills/ — instruções e procedimentos reutilizáveis pelos agentes, incluindo o AGENTS.md e o procedimento de navegação via Firecrawl (com fallback para busca web nativa).
