@@ -75,24 +75,25 @@ Os resultados da busca são salvos em data/job-search-results.md.
 Após criado, o Scout deve ser executado para validar a busca de vagas.
 
 ## 4.3 Curator (plano-fase3.md)
-Criado a partir de plano.md e plano-fase2.md.
-Responsável por buscar cursos na Alura (alura.com.br) que complementem as habilidades que faltam ao usuário.
-Navega no site da Alura usando o Firecrawl, da mesma forma que o Scout faz nos sites de vagas.
-Cruza as informações do quiz do usuário (data/personality-quiz.md) com as vagas encontradas pelo Scout (data/job-search-results.md) para identificar as habilidades faltantes e, a partir disso, recomendar cursos adequados.
-As recomendações são salvas em data/course-recommendations.md.
+- Criado a partir de plano.md e plano-fase2.md.
+- Responsável por buscar cursos na Alura (alura.com.br) que complementem as habilidades que faltam ao usuário.
+- Navega no site da Alura usando o Firecrawl, da mesma forma que o Scout faz nos sites de vagas.
+- Cruza as informações do quiz do usuário (data/personality-quiz.md) com as vagas encontradas pelo Scout (data/job-search-results.md) para identificar as habilidades faltantes e, a partir disso, recomendar cursos adequados.
+- As recomendações são salvas em data/course-recommendations.md.
 ## 5. Como rodar o projeto (resumo passo a passo)
-Instale o Zed e crie sua conta/API key no OpenRouter.
-Configure o provider OpenRouter no Zed (Ctrl+B).
-Instale o Firecrawl:
+- Instale o Zed e crie sua conta/API key no OpenRouter.
+- Configure o provider OpenRouter no Zed (Ctrl+B).
+- Instale o Firecrawl:
 bash
    npx -y firecrawl-cli@latest init --all -k <SUA_CHAVE_FIRECRAWL>
-Escreva o prompt do primeiro agente e salve como plano.md.
-No Zed, abra uma nova thread, referencie @plano.md e mantenha o arquivo com "Keep this file".
-Abra uma nova thread e peça ao agente para ler @AGENTS.md.
-Peça para criar o plano-fase2.md (Scout), referenciando @plano.md, com as instruções de busca de vagas via Firecrawl (com fallback para busca web nativa) e as skills correspondentes.
-Rode o Scout para validar a busca de vagas.
-Peça para criar o plano-fase3.md (Curator), referenciando @plano.md e @plano-fase2.md, com as instruções de busca de cursos na Alura via Firecrawl, cruzando quiz + vagas encontradas.
-Rode o Curator para validar a recomendação de cursos.
+   
+-Escreva o prompt do primeiro agente e salve como plano.md.
+-No Zed, abra uma nova thread, referencie @plano.md e mantenha o arquivo com "Keep this file".
+-Abra uma nova thread e peça ao agente para ler @AGENTS.md.
+-Peça para criar o plano-fase2.md (Scout), referenciando @plano.md, com as instruções de busca de vagas via Firecrawl (com fallback para busca web nativa) e as skills correspondentes.
+-Rode o Scout para validar a busca de vagas.
+-Peça para criar o plano-fase3.md (Curator), referenciando @plano.md e @plano-fase2.md, com as instruções de busca de cursos na Alura via Firecrawl, cruzando quiz + vagas encontradas.
+-Rode o Curator para validar a recomendação de cursos.
 ## 6. Estrutura de arquivos do projeto
 agent-recruiter/
 ├── data/
