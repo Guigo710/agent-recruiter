@@ -97,6 +97,7 @@ bash
 ## 6. Estrutura de arquivos do projeto
 6. Estrutura de arquivos do projeto
 agent-recruiter/
+
 │
 ├── data/
 │   ├── course-recommendations.md   # Cursos recomendados pelo Curator
