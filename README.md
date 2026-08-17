@@ -6,8 +6,11 @@ Projeto de criação de agentes de IA usando Zed (editor com agente integrado) e
 agent-recruiter é o nome do projeto. Dentro dele, o primeiro agente criado tem a persona Maestro.
 
 O projeto é dividido em 3 agentes, construídos em etapas (planos):
-
-## Agente	Persona	Função	Plano
+ - Agente
+ - Persona	
+ - Função	
+ - Plano
+ ## Agentes 
 - Agente 1:	Maestro	Agente base do projeto, orquestra o fluxo geral (quiz de personalidade, perfil do usuário)	plano.md
 - Agente 2:	Scout	Busca vagas de emprego em sites como InfoJobs, Vagas.com, Indeed e Nerdin	plano-fase2.md
 - Agente 3:	Curator	Busca cursos na Alura que complementem as habilidades que faltam ao usuário, com base no quiz e nas vagas encontradas pelo Scout	plano-fase3.md
