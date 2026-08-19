@@ -32,9 +32,10 @@ Abra o Zed.
 Pressione Ctrl+B para abrir a configuração de providers (Configure Providers).
 Encontre OpenRouter na lista.
 Cole a API Key gerada no passo anterior.
-2.4 Instalar e configurar o Firecrawl
 
-O Firecrawl é usado pelos agentes para navegar e extrair conteúdo de páginas web. Ele é instalado e inicializado via npx:
+## 2.4 Instalar e configurar o Firecrawl
+
+- O Firecrawl é usado pelos agentes para navegar e extrair conteúdo de páginas web. Ele é instalado e inicializado via npx:
 
 bash
 npx -y firecrawl-cli@latest init --all -k <SUA_CHAVE_FIRECRAWL>
