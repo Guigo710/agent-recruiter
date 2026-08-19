@@ -48,14 +48,14 @@ Se, por algum motivo, o Firecrawl não funcionar, os agentes devem usar a ferram
 
 O desenvolvimento de cada agente segue sempre o mesmo padrão:
 
-Criar o plano primeiro, escrevendo um bom prompt e salvando o resultado em um arquivo plano*.md (ex: plano.md, plano-fase2.md, plano-fase3.md).
-No Zed, abrir uma nova thread.
-Referenciar o arquivo de plano no prompt usando @, por exemplo @plano.md.
-Marcar a opção "Keep this file" para manter o arquivo de contexto na thread.
-Abrir uma nova thread e pedir ao agente para ler o @AGENTS.md (dentro de skills/, arquivo com as instruções/definições dos agentes).
-A partir daí, o agente executa as tarefas planejadas (ex: instalar o Firecrawl, criar as skills, buscar vagas, buscar cursos etc).
+- Criar o plano primeiro, escrevendo um bom prompt e salvando o resultado em um arquivo plano*.md (ex: plano.md, plano-fase2.md, plano-fase3.md).
+- No Zed, abrir uma nova thread.
+- Referenciar o arquivo de plano no prompt usando @, por exemplo @plano.md.
+- Marcar a opção "Keep this file" para manter o arquivo de contexto na thread.
+- Abrir uma nova thread e pedir ao agente para ler o @AGENTS.md (dentro de skills/, arquivo com as instruções/definições dos agentes).
+- A partir daí, o agente executa as tarefas planejadas (ex: instalar o Firecrawl, criar as skills, buscar vagas, buscar cursos etc).
 
-Cada novo agente é construído em cima do plano anterior, referenciando os planos já existentes. Por exemplo, o plano do Scout referencia o plano.md, e o plano do Curator referencia tanto o plano.md quanto o plano-fase2.md.
+- Cada novo agente é construído em cima do plano anterior, referenciando os planos já existentes. Por exemplo, o plano do Scout referencia o plano.md, e o plano do Curator referencia tanto o plano.md quanto o plano-fase2.md.
 
 ## 4. Detalhamento dos agentes
 ## 4.1 Maestro (plano.md)
